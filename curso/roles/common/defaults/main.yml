@@ -1,0 +1,6 @@
+common_packages:
+  - tcpdump
+  - vim
+  - gcc
+  - tree
+  - curl

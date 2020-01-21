@@ -1,0 +1,23 @@
+---
+
+- name: primeiro playbook.........
+  hosts: webServer
+  tasks: 
+    - name: Atualiza pacotes........
+      yum:
+        name: '*'
+        state: latest
+        update_cache: true
+
+    - name: Instala pacotes
+      yum:
+        name: "{{ packages }}"
+        state: latest
+      vars:
+        packages:
+        - net-tools
+        - vim
+        - curl
+        - nmap
+        - tree
+...

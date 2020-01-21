@@ -1,0 +1,26 @@
+[webServer]
+  centos
+[webServer:vars]
+  ansible_ssh_port=22
+#  ansible_ssh_user=root
+#  ansible_ssh_pass=ramonrrp
+######################################
+
+
+[dataBase]
+  debian
+[dataBase:vars]
+  ansible_ssh_port=5811
+#  ansible_ssh_user=root
+#  ansible_ssh_pass=ramonrrp
+######################################
+
+[servers:children]
+  webServer
+  dataBase
+[servers:vars]  
+  ansible_ssh_user=root
+  ansible_ssh_pass=ramonrrp
+######################################
+
+
