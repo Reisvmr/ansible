@@ -24,4 +24,6 @@
       copy: src=backup.tar.xz dest=/tmp/   #POR PADRÃO O ANSIBLE PROCURA NO DIRETÓRIO FILES DA ESTRUTURA
 
 ...
-#adição para teste de commit 2 3
+#comando usado na execução:
+#ansible-playbook -i hosts ./roles/common/tasks/main.yml
+#
