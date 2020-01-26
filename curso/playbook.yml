@@ -1,0 +1,4 @@
+- name: playbook padrao - Starting Deploy
+  hosts: webServer
+  roles:
+    - common

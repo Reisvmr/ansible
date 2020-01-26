@@ -1,29 +1,23 @@
 ---
-
-  - name: primeiro playbook.........
-    hosts: webServer
-    tasks: 
-#     - name: Atualiza pacotes........
-#       yum:
-#         name: '*'
-#         state: latest
-#         update_cache: true
-
-#     - name: Instala pacotes
-#       yum:
-#         name: "{{ packages }}"
-#         state: latest
-#       vars:
-#         packages:
-#         - net-tools
-#         - vim
-#         - curl
-#         - nmap
-#         - tree
-    - name: Copiando arquivos de backup 
-      copy: src=backup.tar.xz dest=/tmp/   #POR PADRÃO O ANSIBLE PROCURA NO DIRETÓRIO FILES DA ESTRUTURA
-
+- name: Atualiza pacotes........
+  yum:
+    state: latest
+    name: '*'
+    update_cache: true
+- name: Instala pacotes
+  yum:
+    name: "{{ packages }}"
+    state: latest
+  vars:
+    packages:
+    - net-tools
+    - vim
+    - curl
+    - nmap
+    - tree
+- name: Copiando arquivos de backup 
+  copy: src=backup.tar.xz dest=/tmp/   #POR PADRÃO O ANSIBLE PROCURA NO DIRETÓRIO FILES DA ESTRUTURA
 ...
 #comando usado na execução:
-#ansible-playbook -i hosts ./roles/common/tasks/main.yml
-#
+#ansible-playbook -i hosts ./tasks/main.yml
+
