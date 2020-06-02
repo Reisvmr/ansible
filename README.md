@@ -33,7 +33,7 @@ exemplos: ansible [ip, subdivisoes no hosts]
 	-b - executar como super usuario
 	-v - verbose
 
-ansible all -i hosts -u root -k -m systemd -a  "name=sshd state=restarted"
+```"ansible all -i hosts -u root -k -m systemd -a  "name=sshd state=restarted"```
 
 ##
 4 - inventory
