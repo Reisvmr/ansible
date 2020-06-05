@@ -24,14 +24,14 @@ ansible 2.8.3
 ####################################################################
 
 exemplos: ansible [ip, subdivisoes no hosts]
-	1. - iventario	
-	2. - modulo
-	3. - argumentos
-	4. - usuario
-	5. - senha do usuario
-	6. - SENHA DO SUDO
-	7. - executar como super usuario
-	8. - verbose
+	* - iventario	
+	* - modulo
+	* - argumentos
+	* - usuario
+	* - senha do usuario
+	* - SENHA DO SUDO
+	* - executar como super usuario
+	* - verbose
 
 ```"ansible all -i hosts -u root -k -m systemd -a  "name=sshd state=restarted"```
 
