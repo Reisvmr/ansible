@@ -13,7 +13,8 @@ Todos os comando usados no vídeo:
  apt-get install git
  ```
  -Clonar repository:
-  * ```
+
+  ```
   git clone git@github.com:Reisvmr/ansible.git
    ```
 
