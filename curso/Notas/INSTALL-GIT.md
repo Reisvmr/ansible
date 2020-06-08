@@ -26,7 +26,7 @@ Todos os comando usados no vídeo:
  - O arquivo gerado ficara localizado no diretoirio /home/SEUUSUARIO/.ssh/
 
 ================================
-###CADASTRANDO CONTA NO VSCODE
+### CADASTRANDO CONTA NO VSCODE
 ================================
 No terminal do vscode escrever as seguintes linhas:
 ```
