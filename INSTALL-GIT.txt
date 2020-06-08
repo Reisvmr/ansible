@@ -9,7 +9,14 @@ Todos os comando usados no vídeo:
  2º - Git
 
  - Comando: add-apt-repository ppa:git-core/ppa # apt update; apt install git
- - ```apt-get install git```
+ ```
+ apt-get install git
+ ```
+ -Clonar repository:
+  * ```
+  git clone git@github.com:Reisvmr/ansible.git
+   ```
+
 
 ================================
 
