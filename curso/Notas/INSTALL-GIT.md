@@ -22,7 +22,10 @@ Todos os comando usados no vídeo:
 ================================
 
 1º - Gerando a chave SSH do computador e colocando no Github
- - Comando: ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+ - Comando: 
+ ```
+ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+ ```
  - O arquivo gerado ficara localizado no diretoirio /home/SEUUSUARIO/.ssh/
 
 ================================
